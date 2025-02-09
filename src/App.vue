@@ -53,6 +53,8 @@ const people = ref([]);
 const showPeopleModal = ref(false);
 const numberOfPeople = ref(null);
 const isTrainingStarted = ref(false);
+const toast = useToast();
+
 
 // Composables
 const { startTimer, stopTimer, formattedTime } = useTimer();
@@ -84,7 +86,6 @@ const startTraining = () => {
 const handleDrop = ({ event, targetPerson }) => {
   if (event?.dataTransfer) {
     const personId = Number(event?.dataTransfer?.getData("personId"));
-    console.log(event, personId, "c78");
 
     const sourceIndex = people.value.findIndex((p) => p.id === personId);
     const targetIndex = people.value.findIndex((p) => p.id === targetPerson.id);
@@ -106,7 +107,6 @@ const isDescending = (arr) => {
   return arr.every((val, i) => i === 0 || val <= arr[i - 1]);
 };
 
-const toast = useToast();
 
 const checkSorting = () => {
   const potatoValues = people.value.map((person) => Number(person.potatoes));
