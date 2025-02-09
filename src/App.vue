@@ -34,6 +34,7 @@
         min="20"
         max="100"
         class="number-input"
+        placeholder="Enter a number between 20 and 100"
       />
     </Modal>
   </div>
