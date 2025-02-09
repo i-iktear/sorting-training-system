@@ -50,7 +50,7 @@ import { useToast } from "./composables/useToast";
 // State
 const people = ref([]);
 const showPeopleModal = ref(false);
-const numberOfPeople = ref(0);
+const numberOfPeople = ref(null);
 const isTrainingStarted = ref(false);
 
 // Composables
@@ -70,7 +70,7 @@ const showModal = () => {
 
 const cancelModal = () => {
   showPeopleModal.value = false;
-  numberOfPeople.value = 0;
+  numberOfPeople.value = null;
 };
 
 const startTraining = () => {
