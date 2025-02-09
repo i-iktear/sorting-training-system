@@ -1,5 +1,36 @@
-# Vue 3 + Vite
+# Sorting Training System
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A Vue.js application that helps users practice sorting through an interactive drag-and-drop interface.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Features
+
+- Interactive drag-and-drop sorting interface
+- Real-time timer tracking
+- Random data generation with unique values
+- Success notifications
+- Customizable list size (20-100 items)
+
+## Sorting Rules
+
+1. Sort the list by number of potatoes
+2. Arrange from highest (top) to lowest (bottom)
+3. Use drag and drop to reorder rows
+4. Timer tracks your completion time
+5. Success message appears when correctly sorted
+
+## Tech Stack
+
+- Vue 3 (Composition API)
+- Vue Toastification
+- Faker.js
+- HTML5 Drag and Drop API
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
